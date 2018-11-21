@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Classes", "Classes", "{5ECE7896-5FC8-4EA0-A514-DE60394150DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Emulator", "Emulator", "{3CAC931A-885A-4DF1-A4D6-4F7363F4B114}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{6E49ADDE-747D-4614-8FBE-5F0F0D263552}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{75BFD5CC-8AC9-4ACE-A049-5BB874AD0F9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datfiles", "Datfiles", "{8BE5383E-288E-4C11-B6BF-A6CF7B10F3E4}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\Datfiles\zork1.z5 = Resources\Datfiles\zork1.z5
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zfileAnalyzer", "Utilities\zfileAnalyzer\zfileAnalyzer.csproj", "{DADF97CF-6BC4-4D4C-B752-72F7BE1622F1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CA1D07B3-7A67-4367-B63F-8E65819C6301} = {CA1D07B3-7A67-4367-B63F-8E65819C6301}
+		{B1AAE8C0-D07A-409A-B276-C2776F02D3F3} = {B1AAE8C0-D07A-409A-B276-C2776F02D3F3}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "ZFileFormat\Models.csproj", "{CA1D07B3-7A67-4367-B63F-8E65819C6301}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileLoaders", "FileLoaders\FileLoaders.csproj", "{B1AAE8C0-D07A-409A-B276-C2776F02D3F3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8000A91E-D131-4C1A-884C-60F3C519C892} = {8000A91E-D131-4C1A-884C-60F3C519C892}
+		{CA1D07B3-7A67-4367-B63F-8E65819C6301} = {CA1D07B3-7A67-4367-B63F-8E65819C6301}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helpers", "Helpers", "{3474D578-F6C1-4160-8E75-A11C4CCCF0C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helper", "Helpers\Helper\Helper.csproj", "{8000A91E-D131-4C1A-884C-60F3C519C892}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DADF97CF-6BC4-4D4C-B752-72F7BE1622F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DADF97CF-6BC4-4D4C-B752-72F7BE1622F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DADF97CF-6BC4-4D4C-B752-72F7BE1622F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DADF97CF-6BC4-4D4C-B752-72F7BE1622F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA1D07B3-7A67-4367-B63F-8E65819C6301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA1D07B3-7A67-4367-B63F-8E65819C6301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA1D07B3-7A67-4367-B63F-8E65819C6301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA1D07B3-7A67-4367-B63F-8E65819C6301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1AAE8C0-D07A-409A-B276-C2776F02D3F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1AAE8C0-D07A-409A-B276-C2776F02D3F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1AAE8C0-D07A-409A-B276-C2776F02D3F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1AAE8C0-D07A-409A-B276-C2776F02D3F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8000A91E-D131-4C1A-884C-60F3C519C892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8000A91E-D131-4C1A-884C-60F3C519C892}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8000A91E-D131-4C1A-884C-60F3C519C892}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8000A91E-D131-4C1A-884C-60F3C519C892}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8BE5383E-288E-4C11-B6BF-A6CF7B10F3E4} = {6E49ADDE-747D-4614-8FBE-5F0F0D263552}
+		{DADF97CF-6BC4-4D4C-B752-72F7BE1622F1} = {75BFD5CC-8AC9-4ACE-A049-5BB874AD0F9E}
+		{CA1D07B3-7A67-4367-B63F-8E65819C6301} = {5ECE7896-5FC8-4EA0-A514-DE60394150DB}
+		{B1AAE8C0-D07A-409A-B276-C2776F02D3F3} = {5ECE7896-5FC8-4EA0-A514-DE60394150DB}
+		{8000A91E-D131-4C1A-884C-60F3C519C892} = {3474D578-F6C1-4160-8E75-A11C4CCCF0C5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0BC14213-7DFF-4C23-91EF-B02081B698BB}
+	EndGlobalSection
+EndGlobal
